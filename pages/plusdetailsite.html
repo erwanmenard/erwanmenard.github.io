@@ -10,20 +10,7 @@
 
 <body>
 
-    <header role="banner">
-        <h1>Détails de l'Aide sur le Site Internet du Club</h1>
-        <nav aria-label="Menu de navigation">
-            <ul>
-                <li><a href="acceuil.html" class="nav-btn">Accueil</a></li>
-                <li><a href="projets.html" class="nav-btn">Projets</a></li>
-                <li><a href="formulaire.html" class="nav-btn">Formulaire</a></li>
-                <li><a href="tableau.html" class="nav-btn">Tableau</a></li>
-                <li><a href="video.html" class="nav-btn">Vidéo</a></li>
-                <li><a href="carousel.html" class="nav-btn">Carousel</a></li>
-                <li><a href="a_propos.html" class="nav-btn">À propos de moi</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div id="header-container"></div>
 
     <main role="main">
         <article role="article">
@@ -63,6 +50,14 @@
     <footer role="contentinfo">
         <p>&copy; 2024 Mon Blog de Stage. Tous droits réservés.</p>
     </footer>
+    <script>
+        // JavaScript to load header.html into the header-container
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+    </script>
 
 </body>
 
