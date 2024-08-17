@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Blog Accessible - Articles</title>
+</head>
+<body>
+
+    <header role="banner">
+        <h1>Mon Blog Accessible</h1>
+        <nav aria-label="Menu de navigation">
+            <ul>
+                <li><a href="acceuil.html" class="nav-btn">Accueil</a></li>
+                <li><a href="articles.html" class="nav-btn">Projets</a></li>
+                <li><a href="formulaire.html" class="nav-btn">Formulaire</a></li>
+                <li><a href="tableau.html" class="nav-btn">Tableau</a></li>
+                <li><a href="video.html" class="nav-btn">Video</a></li>
+                <li><a href="carousel.html" class="nav-btn">Carousel</a></li>
+                <li><a href="a_propos.html" class="nav-btn">À propos de moi</a></li>
+            </ul>
+        </nav>
+        <div id="accessibility-buttons" aria-label="Options d'accessibilité">
+            <button id="dark-mode-btn">Mode Sombre</button>
+        </div>
+    </header>
+
+    <main role="main">
+
+        <section id="carousel" aria-labelledby="carousel-title">
+            <h2 id="carousel-title">Carrousel </h2>
+            <div class="carousel">
+                <div class="carousel-slide">
+                    <img src="../img/sushis.jpg" alt="Slide 1">
+                </div>
+                <div class="carousel-slide">
+                    <img src="../img/ecologie.jpg" alt="Slide 2">
+                </div>
+                <div class="carousel-slide">
+                    <img src="../img/rs3.jpg" alt="Slide 3">
+                </div>
+                
+            </div>
+            <button class="prev-slide" aria-label="Slide précédente">Précédent</button>
+            <button class="next-slide" aria-label="Slide suivante">Suivant</button>
+        </section>
+
+    <footer role="contentinfo">
+        <p>&copy; 2024 Mon Blog Accessible. Tous droits réservés.</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

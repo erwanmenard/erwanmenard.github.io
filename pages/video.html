@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Blog Accessible - Articles</title>
+</head>
+<body>
+
+    <header role="banner">
+        <h1>Mon Blog Accessible</h1>
+        <nav aria-label="Menu de navigation">
+            <ul>
+                <li><a href="acceuil.html" class="nav-btn">Accueil</a></li>
+                <li><a href="projets.html" class="nav-btn">Projets</a></li>
+                <li><a href="formulaire.html" class="nav-btn">Formulaire</a></li>
+                <li><a href="tableau.html" class="nav-btn">Tableau</a></li>
+                <li><a href="video.html" class="nav-btn">Video</a></li>
+                <li><a href="carousel.html" class="nav-btn">Carousel</a></li>
+                <li><a href="a_propos.html" class="nav-btn">À propos de moi</a></li>
+            </ul>
+        </nav>
+        <div id="accessibility-buttons" aria-label="Options d'accessibilité">
+            <button id="dark-mode-btn">Mode Sombre</button>
+        </div>
+    </header>
+
+    <main role="main">
+
+        <section id="video" aria-labelledby="video-title">
+            <h2 id="video-title">Vidéo courte</h2>
+            <video controls>
+                <source src="../img/Nouvelle911.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p>Voici la meilleur pub de voiture au monde, celle de la nouvelle 911!</p>
+        </section>
+        <p>Transciption : voir les sous-titres de la vidéo.</p>
+
+    </main>
+
+    <footer role="contentinfo">
+        <p>&copy; 2024 Mon Blog Accessible. Tous droits réservés.</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

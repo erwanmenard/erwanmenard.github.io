@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Blog Accessible - Articles</title>
+</head>
+<body>
+
+    <header role="banner">
+        <h1>Mon Blog Accessible</h1>
+        <nav aria-label="Menu de navigation">
+            <ul>
+                <li><a href="acceuil.html" class="nav-btn">Accueil</a></li>
+                <li><a href="projets.html" class="nav-btn">Projets</a></li>
+                <li><a href="formulaire.html" class="nav-btn">Formulaire</a></li>
+                <li><a href="tableau.html" class="nav-btn">Tableau</a></li>
+                <li><a href="video.html" class="nav-btn">Video</a></li>
+                <li><a href="carousel.html" class="nav-btn">Carousel</a></li>
+                <li><a href="a_propos.html" class="nav-btn">À propos de moi</a></li>
+            </ul>
+        </nav>
+        <div id="accessibility-buttons" aria-label="Options d'accessibilité">
+            <button id="dark-mode-btn">Mode Sombre</button>
+        </div>
+    </header>
+
+    <main role="main">
+
+        <section id="table" aria-labelledby="table-title">
+            <h2 id="table-title">Tableau des articles</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">Titre de sujet</th>
+                        <th scope="col">Auteur</th>
+                        <th scope="col">Date de publication</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Les bienfaits écologiques </td>
+                        <td>Emma Green</td>
+                        <td>5 Mars 2024</td>
+                    </tr>
+                    <tr>
+                        <td>Comment préparer des sushis maison</td>
+                        <td>Ayman Bouiba</td>
+                        <td>12 Mars 2024</td>
+                    </tr>
+                    <tr>
+                        <td>Les nouveautés aberrante de la RS3</td>
+                        <td>Adam Alves</td>
+                        <td>20 Mars 2024</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    <footer role="contentinfo">
+        <p>&copy; 2024 Mon Blog Accessible. Tous droits réservés.</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
