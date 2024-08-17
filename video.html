@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="styles.css">
     <title>Blog Accessible - Articles</title>
 </head>
+
 <body>
 
     <header role="banner">
@@ -28,40 +30,23 @@
 
     <main role="main">
 
-        <section id="table" aria-labelledby="table-title">
-            <h2 id="table-title">Tableau des articles</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th scope="col">Titre de sujet</th>
-                        <th scope="col">Auteur</th>
-                        <th scope="col">Date de publication</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Les bienfaits écologiques </td>
-                        <td>Emma Green</td>
-                        <td>5 Mars 2024</td>
-                    </tr>
-                    <tr>
-                        <td>Comment préparer des sushis maison</td>
-                        <td>Ayman Bouiba</td>
-                        <td>12 Mars 2024</td>
-                    </tr>
-                    <tr>
-                        <td>Les nouveautés aberrante de la RS3</td>
-                        <td>Adam Alves</td>
-                        <td>20 Mars 2024</td>
-                    </tr>
-                </tbody>
-            </table>
+        <section id="video" aria-labelledby="video-title">
+            <h2 id="video-title">Vidéo courte</h2>
+            <video controls>
+                <source src="../img/Nouvelle911.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p>Voici la meilleur pub de voiture au monde, celle de la nouvelle 911!</p>
         </section>
+        <p>Transciption : voir les sous-titres de la vidéo.</p>
+
+    </main>
 
     <footer role="contentinfo">
         <p>&copy; 2024 Mon Blog Accessible. Tous droits réservés.</p>
     </footer>
 
-    <script src="../script.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
