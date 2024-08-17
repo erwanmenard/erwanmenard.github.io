@@ -1,16 +1,55 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
     <title>Blog Stage</title>
 </head>
-
 <body>
-    <h1>Bienvenue sur mon blog de stage</h1>
-    <p>Ceci est ma page d'accueil.</p>
-    <a href="pages/acceuil.html">Voir la page d'accueil</a>
-</body>
 
+    <header role="banner">
+        <h1>Mon Blog Stage</h1>
+        <nav aria-label="Menu de navigation">
+            <ul>
+                <li><a href="pages/acceuil.html" class="nav-btn">Accueil</a></li> 
+                <li><a href="pages/projets.html" class="nav-btn">Projets</a></li>
+                <li><a href="pages/formulaire.html" class="nav-btn">Formulaire</a></li>
+                <li><a href="pages/tableau.html" class="nav-btn">Tableau</a></li>
+                <li><a href="pages/video.html" class="nav-btn">Video</a></li>
+                <li><a href="pages/carousel.html" class="nav-btn">Carousel</a></li>
+                <li><a href="pages/a_propos.html" class="nav-btn">À propos de moi</a></li>
+            </ul>
+        </nav>
+        
+        <div id="accessibility-buttons" aria-label="Options d'accessibilité">
+            <button id="dark-mode-btn">Mode Sombre</button>
+        </div>
+    </header>
+
+    <main role="main">
+        <section id="welcome-message" aria-labelledby="welcome-title">
+            <h2 id="welcome-title">Bienvenue sur le Blog de Stage D'Erwan Menard</h2>
+        <section><p>
+            
+            Dans le cadre de mon service civique, j'ai l'opportunité de collaborer avec mon club de tennis de table dynamique et passionné. Mon rôle consiste à participer activement à mettre à jour le site internet de mon club afin de renforcer sa visibilité en ligne et d'améliorer la communication avec ses membres. De plus, je me suis engagé dans la création d'un logiciel innovant destiné à faciliter la gestion des équipes en compétition, offrant ainsi un soutien technique essentiel pour l'organisation des événements sportifs.
+
+            </p>
+        </section>
+
+        <p>
+            Ce blog est dédié à partager mon expérience, mes apprentissages, et les défis que je rencontre tout au long de cette aventure enrichissante.
+        </p>
+            
+        </section>
+    </main>
+    
+
+    <footer role="contentinfo">
+        <p>&copy; 2024 Mon Blog Stage. Tous droits réservés.</p>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
 </html>
+
