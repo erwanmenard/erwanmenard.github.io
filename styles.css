@@ -14,7 +14,7 @@ body {
 }
 
 header {
-    background-color: #c63131;
+    background-color: #f94c4c;
     color: #fff;
     text-align: center;
     padding: 0.1em;
@@ -74,8 +74,8 @@ article:hover img {
 }
 
 h3 {
-    color: #c63131;
-    border-bottom: 2px solid #c63131;
+    color: #f94c4c;
+    border-bottom: 2px solid #f94c4c;
     padding-bottom: 10px;
     margin-bottom: 20px;
 }
@@ -105,20 +105,20 @@ textarea {
 }
 
 textarea:focus {
-    border-color: #c63131;
+    border-color: #f94c4c;
 }
 
 button {
-    background-color: #c63131;
+    background-color: #f94c4c;
     padding: 15px 25px;
     border: none;
     border-radius: 12px;
     cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 button:hover {
-    background-color: #c63131;
+    background-color: #dd2f2f; 
     transform: scale(1.05);
 }
 
@@ -171,12 +171,12 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #c63131;
+    background-color: #f94c4c;
     color: #000000;
 }
 
 .nav-btn {
-    background-color: #c63131;
+    background-color: #f94c4c;
     color: #000000;
     padding: 10px 20px;
     border: none;
@@ -186,7 +186,7 @@ nav ul li a:hover {
 }
 
 .nav-btn:hover {
-    background-color: #981f1f;
+    background-color: #dd2f2f;
     transform: scale(1.05);
 }
 
@@ -240,6 +240,14 @@ body:not(.dark-mode) table tbody tr:hover {
 
 .dark-mode table tbody tr:hover {
     background-color: #333333;
+}
+
+button.dark-mode-btn {
+    background-color: #f94c4c;
+}
+
+button.dark-mode-btn:hover {
+    background-color: #dd2f2f; 
 }
 
 
