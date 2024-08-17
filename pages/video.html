@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../styles.css">
     <title>Blog Accessible - Articles</title>
 </head>
+
 <body>
 
     <header role="banner">
@@ -13,7 +15,7 @@
         <nav aria-label="Menu de navigation">
             <ul>
                 <li><a href="acceuil.html" class="nav-btn">Accueil</a></li>
-                <li><a href="articles.html" class="nav-btn">Projets</a></li>
+                <li><a href="projets.html" class="nav-btn">Projets</a></li>
                 <li><a href="formulaire.html" class="nav-btn">Formulaire</a></li>
                 <li><a href="tableau.html" class="nav-btn">Tableau</a></li>
                 <li><a href="video.html" class="nav-btn">Video</a></li>
@@ -28,28 +30,23 @@
 
     <main role="main">
 
-        <section id="carousel" aria-labelledby="carousel-title">
-            <h2 id="carousel-title">Carrousel </h2>
-            <div class="carousel">
-                <div class="carousel-slide">
-                    <img src="../img/sushis.jpg" alt="Slide 1">
-                </div>
-                <div class="carousel-slide">
-                    <img src="../img/ecologie.jpg" alt="Slide 2">
-                </div>
-                <div class="carousel-slide">
-                    <img src="../img/rs3.jpg" alt="Slide 3">
-                </div>
-                
-            </div>
-            <button class="prev-slide" aria-label="Slide précédente">Précédent</button>
-            <button class="next-slide" aria-label="Slide suivante">Suivant</button>
+        <section id="video" aria-labelledby="video-title">
+            <h2 id="video-title">Vidéo courte</h2>
+            <video controls>
+                <source src="../img/Nouvelle911.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p>Voici la meilleur pub de voiture au monde, celle de la nouvelle 911!</p>
         </section>
+        <p>Transciption : voir les sous-titres de la vidéo.</p>
+
+    </main>
 
     <footer role="contentinfo">
         <p>&copy; 2024 Mon Blog Accessible. Tous droits réservés.</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="../script.js"></script>
 </body>
+
 </html>
