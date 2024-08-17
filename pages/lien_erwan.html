@@ -1,33 +1,44 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles.css">
     <title>Mon CV et LinkedIn</title>
 </head>
+
 <body>
 
     <header role="banner">
-        <h1>Mon CV et LinkedIn</h1>
+        <h1>Mon Blog de Stage</h1>
         <nav aria-label="Menu de navigation">
             <ul>
                 <li><a href="acceuil.html" class="nav-btn">Accueil</a></li>
                 <li><a href="projets.html" class="nav-btn">Projets</a></li>
+                <li><a href="formulaire.html" class="nav-btn">Formulaire</a></li>
+                <li><a href="tableau.html" class="nav-btn">Tableau</a></li>
+                <li><a href="video.html" class="nav-btn">Vidéo</a></li>
+                <li><a href="carousel.html" class="nav-btn">Carousel</a></li>
                 <li><a href="a_propos.html" class="nav-btn">À propos de moi</a></li>
             </ul>
         </nav>
+
+        <div id="accessibility-buttons" aria-label="Options d'accessibilité">
+            <button id="dark-mode-btn">Mode Sombre</button>
+        </div>
     </header>
 
     <main role="main">
         <section>
             <h2>Mon CV</h2>
-            <p><a href="../img/CV_d'Erwan_Menard.pdf" target="_blank">Télécharger mon CV en PDF</a></p>
+            <p><a href="../img/CV_d'Erwan_Menard.pdf" class="nav-btn" target="_blank">Télécharger mon CV en PDF</a></p>
         </section>
 
         <section>
             <h2>Mon LinkedIn</h2>
-            <p><a href="https://www.linkedin.com/in/erwan-menard-5a5074275/" target="_blank">Voir mon profil LinkedIn</a></p>
+            <p><a href="https://www.linkedin.com/in/erwan-menard-5a5074275/" class="nav-btn" target="_blank">Voir mon
+                    profil LinkedIn</a></p>
         </section>
     </main>
 
@@ -37,4 +48,5 @@
 
     <script src="../script.js"></script>
 </body>
+
 </html>
