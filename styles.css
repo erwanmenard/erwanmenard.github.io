@@ -16,8 +16,30 @@ body {
 header {
     background-color: #f94c4c;
     color: #fff;
-    text-align: center;
-    padding: 0.1em;
+    padding: 0.1em 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#club-logo {
+    width: 50px; 
+    height: auto;
+    margin-right: 20px;
+    vertical-align: middle;
+}
+
+#service-civique-logo {
+    width: 50px;
+    height: auto;
+    margin-left: 20px;
+    vertical-align: middle;
+}
+
+header h1 {
+    margin: 0;
+    text-align: left;
+    flex-grow: 1;
 }
 
 h1, h3 {
