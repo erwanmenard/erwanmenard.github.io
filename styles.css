@@ -250,6 +250,10 @@ button.dark-mode-btn:hover {
     background-color: #dd2f2f; 
 }
 
+#dark-mode-btn {
+    color: #000000; 
+}
+
 
 article > * {
     margin-left: 20px;
