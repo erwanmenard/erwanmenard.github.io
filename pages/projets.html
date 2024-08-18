@@ -11,7 +11,10 @@
 <body>
 
     <header role="banner">
-        <h1>Mon Blog de Stage</h1>
+        <a href="https://www.pjvtt.fr" target="_blank">
+            <img src="../img/logo_pjvtt.png" alt="Logo du club PJ VTT" id="club-logo">
+        </a>
+        <h1>Blog Stage</h1>
         <nav aria-label="Menu de navigation">
             <ul>
                 <li><a href="acceuil.html" class="nav-btn">Accueil</a></li>
@@ -19,18 +22,27 @@
                 <li><a href="a_propos.html" class="nav-btn">À propos de moi</a></li>
             </ul>
         </nav>
+
         <div id="accessibility-buttons" aria-label="Options d'accessibilité">
-            <button id="dark-mode-btn">Mode Sombre</button>
+            <button id="dark-mode-btn">Mode Sombre/Clair</button>
         </div>
+        <a href="https://www.service-civique.gouv.fr/" target="_blank">
+            <img src="../img/logo-service-civique.png" alt="Logo Service Civique" id="service-civique-logo">
+        </a>
     </header>
 
     <main role="main">
-
+        <h1>Mes deux projets : le site et le programme</h1>
         <article id="article2" role="article">
             <h2>Site Internet du Club</h2>
-            <img src="../img/Acceuil_ping.png" alt="Capture d'écran du site internet du club">
-            <p>Durant mon stage, j'ai eu l'opportunité de participer à l'optimisation du site internet
-                de mon club de tennis de table. Ce travail a impliqué la mise en place d'une structure claire,
+
+            <!-- Image cliquable -->
+            <a href="https://www.pjvtt.fr" target="_blank">
+                <img src="../img/Acceuil_ping.png" alt="Capture d'écran du site internet du club">
+            </a>
+
+            <p>Durant mon service-civique, j'ai eu l'opportunité de participer à l'optimisation du site internet
+                de l'association. Ce travail a impliqué la mise en place d'une structure claire,
                 l'amélioration de l'accessibilité et l'intégration de fonctionnalités permettant une meilleure
                 interaction avec les membres du club.</p>
 
@@ -40,23 +52,23 @@
         </article>
 
         <article id="article1" role="article">
-            <h2>Développement d'un Programme pour la Gestion des Équipes</h2>
+            <h2>Programme pour la Gestion des Équipes</h2>
             <img src="../img/Logiciel.png" alt="Équipe de tennis de table">
             <p>En plus du site internet, j'ai travaillé sur un logiciel spécialement conçu pour faciliter la gestion des
-                équipes lors des compétitions. Ce programme permet de gérer efficacement les inscriptions, les
-                calendriers de matchs, et les performances des joueurs, offrant ainsi un outil précieux pour les
-                entraîneurs et les organisateurs.</p>
+                équipes lors des compétitions. Ce programme permet de gérer efficacement les équipes à cause de la
+                cascade des points, offrant ainsi un outil précieux pour les entraîneurs et les organisateurs.</p>
 
             <section aria-label="Plus de détail">
                 <button onclick="window.location.href='plusdetailprogramme.html'">Plus de détail</button>
             </section>
         </article>
+    </main>
 
-        <footer role="contentinfo">
-            <p>&copy; 2024 Mon Blog de Stage. Tous droits réservés.</p>
-        </footer>
+    <footer role="contentinfo">
+        <p>&copy; 2024 Blog de Stage. Tous droits réservés.</p>
+    </footer>
 
-        <script src="../script.js"></script>
+    <script src="../script.js"></script>
 </body>
 
 </html>

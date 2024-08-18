@@ -1,10 +1,13 @@
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+    margin: 0;
+    padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 16px;
     line-height: 1.8;
     color: #333;
-    margin: 0;
-    padding: 0;
     background-color: #f8f8f8;
 }
 
@@ -23,14 +26,14 @@ header {
 }
 
 #club-logo {
-    width: 50px; 
+    width: 80px;
     height: auto;
     margin-right: 20px;
     vertical-align: middle;
 }
 
 #service-civique-logo {
-    width: 50px;
+    width: 100px;
     height: auto;
     margin-left: 20px;
     vertical-align: middle;
@@ -42,11 +45,13 @@ header h1 {
     flex-grow: 1;
 }
 
-h1, h3 {
+h1,
+h3 {
     color: #333;
 }
 
 main {
+    flex-grow: 1; 
     max-width: 900px;
     margin: 20px auto;
     background-color: #fff;
@@ -70,17 +75,17 @@ article:hover {
 
 
 .dark-mode article {
-    background-color: #222; 
-    color: #ffffff; 
+    background-color: #222;
+    color: #ffffff;
 }
 
 .dark-mode main {
-    background-color: #222; 
-    color: #ffffff; 
+    background-color: #222;
+    color: #ffffff;
 }
 
 img {
-    max-width: 100%;
+    max-width: 95.5%;
     height: auto;
     border-radius: 12px 12px 0 0;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
@@ -133,15 +138,16 @@ textarea:focus {
 button {
     background-color: #f94c4c;
     color: black;
-    padding: 15px 25px;
+    padding: 15px 5px;
     border: none;
     border-radius: 12px;
     cursor: pointer;
     transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    font-size: medium;
 }
 
 button:hover {
-    background-color: #dd2f2f; 
+    background-color: #dd2f2f;
     transform: scale(1.05);
 }
 
@@ -162,17 +168,17 @@ article:hover {
     display: flex;
     overflow: hidden;
     position: relative;
-    
-    
+
+
 }
 
 .carousel-slide img {
     display: block;
     margin: 0 auto;
     width: 40%;
-    height: 300px; 
-    object-fit: cover; 
-    border-radius: 12px; 
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
 }
 
 
@@ -201,11 +207,13 @@ nav ul li a:hover {
 .nav-btn {
     background-color: #f94c4c;
     color: #000000;
-    padding: 10px 20px;
+    padding: 10px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
+    text-decoration: none;
+    font-size: medium;
 }
 
 .nav-btn:hover {
@@ -223,26 +231,27 @@ nav ul li a:hover {
 }
 
 .carousel-slide {
-    width: 100%; 
+    width: 100%;
 }
 
 .carousel-slide video {
-    width: 100%; 
-    height: auto; 
+    width: 100%;
+    height: auto;
 }
 
 table {
     border-collapse: collapse;
     width: 100%;
-    border-top: 1px solid #ddd; 
+    border-top: 1px solid #ddd;
 }
 
-th, td {
+th,
+td {
     border-bottom: 1px solid #ddd;
     padding: 8px;
     text-align: left;
     border-right: 1px solid #ddd;
-    border-left: 1px solid #ddd; 
+    border-left: 1px solid #ddd;
 }
 
 th {
@@ -270,14 +279,39 @@ button.dark-mode-btn {
 }
 
 button.dark-mode-btn:hover {
-    background-color: #dd2f2f; 
+    background-color: #dd2f2f;
 }
 
 #dark-mode-btn {
-    color: #000000; 
+    color: #000000;
+}
+
+img:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #f94c4c; /* Couleur du footer identique à celle du header */
+    color: #000000;
+    text-align: left;
+    padding: 1px 10px;
+    position: relative; /* Position relative pour un placement normal */
+    width: 100%; /* Assure que le footer prend toute la largeur de la page */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Ajoute une ombre subtile en haut du footer */
+    flex-shrink: 0; /* Assure que le footer reste en bas */
+}
+
+#Raquette-tennis-de-table {
+    display: block;
+    margin: 20px auto; /* Centre l'image horizontalement avec un espace en haut et en bas */
+    max-width: 50%; /* Réduit la taille de l'image à 50% de sa largeur originale */
+    height: auto; /* Garde les proportions de l'image */
 }
 
 
-article > * {
+
+
+article>* {
     margin-left: 20px;
 }
