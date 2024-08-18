@@ -110,6 +110,7 @@ textarea:focus {
 
 button {
     background-color: #f94c4c;
+    color: black;
     padding: 15px 25px;
     border: none;
     border-radius: 12px;
