@@ -369,3 +369,92 @@ footer {
 #side-panel .side-btn:hover {
     background-color: #0056b3;
 }
+
+/* Mode sombre pour le main */
+.dark-mode main {
+    background-color: #222;
+    color: #ffffff;
+}
+
+/* Mode sombre pour les articles */
+.dark-mode article {
+    background-color: #222;
+    color: #ffffff;
+}
+
+/* Mode sombre pour les commentaires */
+.dark-mode .comment-list p {
+    background-color: #444;
+    color: #ffffff;
+}
+
+/* Mode sombre pour le tableau */
+.dark-mode table thead th {
+    background-color: #444;
+}
+
+.dark-mode table tbody tr:hover {
+    background-color: #333;
+}
+
+/* Mode sombre pour le panneau latéral */
+.dark-mode #side-panel {
+    background-color: #444;
+    color: #ffffff;
+    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.1);
+    /* Adjusted shadow for dark mode */
+}
+
+.dark-mode #side-panel h3 {
+    color: #ffffff;
+}
+
+.dark-mode #side-panel .side-btn {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+.dark-mode #side-panel .side-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Autres éléments pouvant être personnalisés en mode sombre */
+
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3 {
+    color: #ffffff;
+}
+
+.dark-mode button {
+    background-color: #666;
+    color: #ffffff;
+}
+
+.dark-mode button:hover {
+    background-color: #888;
+}
+
+/* Exemple pour la barre sous "Menard Erwan" */
+#contact-menard-erwan {
+    border-bottom: 2px solid #000000;
+    /* Couleur de la barre en mode clair */
+}
+
+/* Mode sombre pour la barre sous "Menard Erwan" */
+.dark-mode #contact-menard-erwan {
+    border-bottom: 2px solid #ffffff;
+    /* Change la couleur de la barre en blanc en mode sombre */
+}
+
+/* Exemple pour l'adresse e-mail */
+.email {
+    color: #000000;
+    /* Couleur de l'e-mail en mode clair */
+}
+
+/* Mode sombre pour l'adresse e-mail */
+.dark-mode .email {
+    color: #ffffff;
+    /* Change la couleur de l'e-mail en blanc en mode sombre */
+}
