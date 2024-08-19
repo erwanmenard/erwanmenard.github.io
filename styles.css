@@ -67,6 +67,16 @@ main {
     border-radius: 12px;
 }
 
+/* Styles pour centrer le main dans les autres pages */
+.centered-main {
+    margin: 20px auto;
+    max-width: 900px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 12px;
+}
+
 article {
     margin-bottom: 30px;
     padding-left: 20px;
@@ -335,15 +345,17 @@ footer {
     /* Ajoute une ombre pour le panneau latéral */
     z-index: 100;
     /* S'assure que le panneau latéral reste au-dessus du contenu principal */
+    font-size: 14px;
 }
 
 #side-panel h3 {
     margin-top: 0;
-    font-size: 18px;
+    font-size: 14px;
 }
 
 #side-panel p {
     margin: 10px 0;
+    font-size: 14px;
 }
 
 #side-panel .side-btn {
