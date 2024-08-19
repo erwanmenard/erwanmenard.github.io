@@ -59,7 +59,8 @@ h3 {
 main {
     flex-grow: 1;
     max-width: 900px;
-    margin: 20px auto;
+    margin: 20px 230px 20px 100px;
+    /* Décale vers la gauche avec un margin-left de 40px et ajoute un margin-right pour le side-panel */
     background-color: #fff;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -323,12 +324,17 @@ footer {
 
 #side-panel {
     position: fixed;
-    right: 0;
+    right: 0px;
+    /* Fixe à 40px du bord droit pour correspondre au décalage du main */
     top: 50%;
     transform: translateY(-50%);
     width: 200px;
     background-color: #f4f4f4;
     padding: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    /* Ajoute une ombre pour le panneau latéral */
+    z-index: 100;
+    /* S'assure que le panneau latéral reste au-dessus du contenu principal */
 }
 
 #side-panel h3 {
