@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <title>Blog Stage</title>
+</head>
+
+<body>
+
+    <header role="banner">
+        <a href="https://www.pjvtt.fr" target="_blank">
+            <img src="../img/logo_pjvtt.png" alt="Logo du club PJ VTT" id="club-logo">
+        </a>
+        <h1>Blog Stage</h1>
+        <nav aria-label="Menu de navigation">
+            <ul>
+                <li><a href="acceuil.html" class="nav-btn">Accueil</a></li>
+                <li><a href="projets.html" class="nav-btn">Projets</a></li>
+                <li><a href="a_propos.html" class="nav-btn">À propos de moi</a></li>
+            </ul>
+        </nav>
+
+        <div id="accessibility-buttons" aria-label="Options d'accessibilité">
+            <button id="dark-mode-btn">Mode Sombre/Clair</button>
+        </div>
+        <a href="https://www.service-civique.gouv.fr/" target="_blank">
+            <img src="../img/logo-service-civique.png" alt="Logo Service Civique" id="service-civique-logo">
+        </a>
+    </header>
+
+    <main role="main">
+        <section id="video" aria-labelledby="video-title">
+            <h2 id="video-title">Vidéo démonstrative</h2>
+            <video controls autoplay preload="auto" id="custom-video">
+                <source src="../img/Nouvelle911.mp4" type="video/mp4">
+                Votre navigateur ne supporte pas la balise vidéo.
+            </video>
+            <p>Voici la meilleure pub de voiture au monde, celle de la nouvelle 911!</p>
+        </section>
+
+        <section aria-label="Retour">
+            <button onclick="window.location.href='plusdetailprogramme.html'">Retour</button>
+        </section>
+
+    </main>
+
+    <footer role="contentinfo">
+        <p>&copy; 2024 Blog de Stage. Tous droits réservés.</p>
+    </footer>
+    <script src="../script.js"></script>
+
+</body>
+
+</html>

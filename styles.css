@@ -1,7 +1,7 @@
 body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; 
+    min-height: 100vh;
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -17,7 +17,7 @@ body {
 }
 
 header {
-    background-color: #f94c4c;
+    background-color: #549cf9;
     color: #fff;
     padding: 0.1em 1em;
     display: flex;
@@ -30,13 +30,19 @@ header {
     height: auto;
     margin-right: 20px;
     vertical-align: middle;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
 }
 
 #service-civique-logo {
-    width: 100px;
+    width: 80px;
     height: auto;
     margin-left: 20px;
     vertical-align: middle;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
 }
 
 header h1 {
@@ -51,7 +57,7 @@ h3 {
 }
 
 main {
-    flex-grow: 1; 
+    flex-grow: 1;
     max-width: 900px;
     margin: 20px auto;
     background-color: #fff;
@@ -62,6 +68,8 @@ main {
 
 article {
     margin-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
     border-radius: 12px;
     overflow: hidden;
     position: relative;
@@ -84,25 +92,14 @@ article:hover {
     color: #ffffff;
 }
 
-img {
-    max-width: 95.5%;
-    height: auto;
-    border-radius: 12px 12px 0 0;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-}
-
-article:hover img {
-    transform: scale(1.05);
-}
 
 .comments {
     margin-top: 30px;
 }
 
 h3 {
-    color: #f94c4c;
-    border-bottom: 2px solid #f94c4c;
+    color: #000000;
+    border-bottom: 2px solid #000000;
     padding-bottom: 10px;
     margin-bottom: 20px;
 }
@@ -132,11 +129,11 @@ textarea {
 }
 
 textarea:focus {
-    border-color: #f94c4c;
+    border-color: #3d5eff;
 }
 
 button {
-    background-color: #f94c4c;
+    background-color: #549cf9;
     color: black;
     padding: 15px 5px;
     border: none;
@@ -147,17 +144,8 @@ button {
 }
 
 button:hover {
-    background-color: #dd2f2f;
+    background-color: #ff3a3a;
     transform: scale(1.05);
-}
-
-article {
-    margin-bottom: 30px;
-    border-radius: 12px;
-    overflow: hidden;
-    position: relative;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s ease-in-out;
 }
 
 article:hover {
@@ -200,12 +188,12 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #f94c4c;
+    background-color: #549cf9;
     color: #000000;
 }
 
 .nav-btn {
-    background-color: #f94c4c;
+    background-color: #549cf9;
     color: #000000;
     padding: 10px;
     border: none;
@@ -217,7 +205,7 @@ nav ul li a:hover {
 }
 
 .nav-btn:hover {
-    background-color: #dd2f2f;
+    background-color: #ff3a3a;
     transform: scale(1.05);
 }
 
@@ -292,26 +280,77 @@ img:hover {
 }
 
 footer {
-    background-color: #f94c4c; /* Couleur du footer identique à celle du header */
+    background-color: #549cf9;
+    /* Couleur du footer identique à celle du header */
     color: #000000;
     text-align: left;
-    padding: 1px 10px;
-    position: relative; /* Position relative pour un placement normal */
-    width: 100%; /* Assure que le footer prend toute la largeur de la page */
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Ajoute une ombre subtile en haut du footer */
-    flex-shrink: 0; /* Assure que le footer reste en bas */
+    position: relative;
+    /* Position relative pour un placement normal */
+    width: 100%;
+    /* Assure que le footer prend toute la largeur de la page */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    /* Ajoute une ombre subtile en haut du footer */
+    flex-shrink: 0;
+    /* Assure que le footer reste en bas */
 }
 
 #Raquette-tennis-de-table {
     display: block;
-    margin: 20px auto; /* Centre l'image horizontalement avec un espace en haut et en bas */
-    max-width: 50%; /* Réduit la taille de l'image à 50% de sa largeur originale */
-    height: auto; /* Garde les proportions de l'image */
+    margin: 20px auto;
+    /* Centre l'image horizontalement avec un espace en haut et en bas */
+    max-width: 50%;
+    /* Réduit la taille de l'image à 50% de sa largeur originale */
+    height: auto;
+    /* Garde les proportions de l'image */
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
 }
 
+.custom-image {
+    display: block;
+    max-width: 70%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    margin: 20px auto;
+}
 
+.custom-image:hover {
+    transform: scale(1.05);
+}
 
+#side-panel {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 200px;
+    background-color: #f4f4f4;
+    padding: 15px;
+}
 
-article>* {
-    margin-left: 20px;
+#side-panel h3 {
+    margin-top: 0;
+    font-size: 18px;
+}
+
+#side-panel p {
+    margin: 10px 0;
+}
+
+#side-panel .side-btn {
+    display: block;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#side-panel .side-btn:hover {
+    background-color: #0056b3;
 }
