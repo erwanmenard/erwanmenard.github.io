@@ -45,6 +45,11 @@ header {
     transition: transform 0.3s ease-in-out;
 }
 
+#club-logo:hover,
+#service-civique-logo:hover {
+    transform: scale(1.07);
+}
+
 header h1 {
     margin: 0;
     text-align: left;
@@ -420,7 +425,6 @@ footer {
 
 /* Autres éléments pouvant être personnalisés en mode sombre */
 
-
 .dark-mode h2,
 .dark-mode h3 {
     color: #ffffff;
@@ -457,4 +461,8 @@ footer {
 .dark-mode .email {
     color: #ffffff;
     /* Change la couleur de l'e-mail en blanc en mode sombre */
+}
+
+p {
+    text-align: justify;
 }
