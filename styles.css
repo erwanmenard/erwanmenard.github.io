@@ -160,7 +160,7 @@ button {
 }
 
 button:hover {
-    background-color: #ff3a3a;
+    background-color: #1b72be;
     transform: scale(1.05);
 }
 
@@ -221,7 +221,7 @@ nav ul li a:hover {
 }
 
 .nav-btn:hover {
-    background-color: #ff3a3a;
+    background-color: #1b72be;
     transform: scale(1.05);
 }
 
